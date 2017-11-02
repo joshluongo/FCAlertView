@@ -1138,6 +1138,7 @@
 +(NSBundle *)getResourcesBundle
 {
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    
     return bundle;
 }
 
@@ -1237,7 +1238,6 @@
     
     [self setAlertViewAttributes:title withSubtitle:subTitle withCustomImage:image withDoneButtonTitle:done andButtons:buttons];
     [view.view.window addSubview:self];
-    
 }
 
 - (void) showAlertInWindow:(UIWindow *)window withTitle:(NSString *)title withSubtitle:(NSString *)subTitle withCustomImage:(UIImage *)image withDoneButtonTitle:(NSString *)done andButtons:(NSArray *)buttons {
@@ -1256,7 +1256,6 @@
     
     [self setAlertViewAttributes:title withSubtitle:subTitle withCustomImage:image withDoneButtonTitle:done andButtons:buttons];
     [window addSubview:self];
-    
 }
 
 - (void) showAlertWithTitle:(NSString *)title withSubtitle:(NSString *)subTitle withCustomImage:(UIImage *)image withDoneButtonTitle:(NSString *)done andButtons:(NSArray *)buttons{
@@ -1277,7 +1276,6 @@
     
     [window addSubview:self];
     [window bringSubviewToFront:self];
-    
 }
 
 - (void) showAlertWithAttributedTitle:(NSAttributedString *)title withSubtitle:(NSString *)subTitle withCustomImage:(UIImage *)image withDoneButtonTitle:(NSString *)done andButtons:(NSArray *)buttons {
@@ -1413,7 +1411,13 @@
         }
         
     } completion:^(BOOL finished) {
-        if (_bounceAnimations)
+        // Show text field
+        if (_autoFocusTextField && alertTextFieldHolder.count > 0) {
+            UITextField *tf = alertTextFieldHolder.firstObject;
+            [tf becomeFirstResponder];
+        }
+        
+        if (_bounceAnimations && !(_autoFocusTextField && alertTextFieldHolder.count > 0)) {
             [UIView animateWithDuration:0.5 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
                 if (!_animateAlertInFromTop && !_animateAlertInFromLeft && !_animateAlertInFromRight && !_animateAlertInFromBottom)
                     alertViewContents.transform = CGAffineTransformMakeScale(1.00, 1.00);
@@ -1422,6 +1426,8 @@
                                                      alertViewFrame.size.width,
                                                      alertViewFrame.size.height);
             } completion:nil];
+        }
+        
         if (self.autoHideSeconds != 0) {
             [self performSelector:@selector(dismissAlertView) withObject:nil afterDelay:self.autoHideSeconds];
         }

@@ -109,6 +109,7 @@
 @property BOOL fullCircleCustomImage;
 @property BOOL hideSeparatorLineView;
 @property CGFloat customImageScale;
+@property BOOL autoFocusTextField;
 
 // Default Types of Alerts
 
