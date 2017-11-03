@@ -559,7 +559,9 @@
     if (_numberOfButtons == 0) { // View only contains DONE/DISMISS Button
         
         UIButton *doneButton = [UIButton buttonWithType:UIButtonTypeSystem];
-        if (_colorScheme == nil) {
+        if (_doneButtonBackgroundColor) {
+            doneButton.backgroundColor = _doneButtonBackgroundColor;
+        } else if (_colorScheme == nil) {
             doneButton.backgroundColor = [UIColor whiteColor];
             if (_detachButtons)
                 doneButton.backgroundColor = [UIColor colorWithWhite:228.0f/255.0f alpha:1.0];
@@ -603,7 +605,9 @@
     } else if (_numberOfButtons == 1) { // View also contains OTHER (One) Button
         
         UIButton *doneButton = [UIButton buttonWithType:UIButtonTypeSystem];
-        if (_colorScheme == nil) {
+        if (_doneButtonBackgroundColor) {
+            doneButton.backgroundColor = _doneButtonBackgroundColor;
+        } else if (_colorScheme == nil) {
             doneButton.backgroundColor = [UIColor whiteColor];
             if (_detachButtons)
                 doneButton.backgroundColor = [UIColor colorWithWhite:228.0f/255.0f alpha:1.0];
@@ -819,7 +823,9 @@
         secondButton.tag = 1;
         
         UIButton *doneButton = [UIButton buttonWithType:UIButtonTypeSystem];
-        if (_colorScheme == nil) {
+        if (_doneButtonBackgroundColor) {
+            doneButton.backgroundColor = _doneButtonBackgroundColor;
+        } else if (_colorScheme == nil) {
             doneButton.backgroundColor = [UIColor whiteColor];
             if (_detachButtons)
                 doneButton.backgroundColor = [UIColor colorWithWhite:228.0f/255.0f alpha:1.0];

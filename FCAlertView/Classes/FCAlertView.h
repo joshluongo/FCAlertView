@@ -188,6 +188,7 @@ typedef void (^FCTextReturnBlock)(NSString *text);
 @property (nonatomic, retain)  UIColor * doneButtonTitleColor;
 @property (nonatomic, retain)  UIFont * doneButtonCustomFont;
 @property (nonatomic, retain)  UIColor * doneButtonHighlightedBackgroundColor;
+@property (nonatomic, retain)  UIColor * doneButtonBackgroundColor;
 
 @property (nonatomic, retain)  UIColor * firstButtonTitleColor;
 @property (nonatomic, retain)  UIFont * firstButtonCustomFont;
