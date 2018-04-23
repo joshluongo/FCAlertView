@@ -6,6 +6,8 @@
 //  Copyright © 2016 Nima Tahami. All rights reserved.
 //
 
+//  Modifications for JR Apps.
+
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
