@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		031A04471FAAAA4C00B29550 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 031A043D1FAAAA4C00B29550 /* .gitkeep */; };
 		031A04481FAAAA4C00B29550 /* alert-round.png in Resources */ = {isa = PBXBuildFile; fileRef = 031A043E1FAAAA4C00B29550 /* alert-round.png */; };
 		031A04491FAAAA4C00B29550 /* checkmark-round.png in Resources */ = {isa = PBXBuildFile; fileRef = 031A043F1FAAAA4C00B29550 /* checkmark-round.png */; };
 		031A044A1FAAAA4C00B29550 /* close-round.png in Resources */ = {isa = PBXBuildFile; fileRef = 031A04401FAAAA4C00B29550 /* close-round.png */; };
 		031A044B1FAAAA4C00B29550 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 031A04411FAAAA4C00B29550 /* heart.png */; };
 		031A044C1FAAAA4C00B29550 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 031A04421FAAAA4C00B29550 /* star.png */; };
-		031A044D1FAAAA4C00B29550 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 031A04441FAAAA4C00B29550 /* .gitkeep */; };
 		031A044E1FAAAA4C00B29550 /* FCAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 031A04451FAAAA4C00B29550 /* FCAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		031A044F1FAAAA4C00B29550 /* FCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 031A04461FAAAA4C00B29550 /* FCAlertView.m */; };
 /* End PBXBuildFile section */
@@ -21,13 +19,11 @@
 /* Begin PBXFileReference section */
 		031A04311FAAA9CF00B29550 /* FCAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FCAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		031A04351FAAA9CF00B29550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		031A043D1FAAAA4C00B29550 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		031A043E1FAAAA4C00B29550 /* alert-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert-round.png"; sourceTree = "<group>"; };
 		031A043F1FAAAA4C00B29550 /* checkmark-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkmark-round.png"; sourceTree = "<group>"; };
 		031A04401FAAAA4C00B29550 /* close-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-round.png"; sourceTree = "<group>"; };
 		031A04411FAAAA4C00B29550 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 		031A04421FAAAA4C00B29550 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
-		031A04441FAAAA4C00B29550 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		031A04451FAAAA4C00B29550 /* FCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCAlertView.h; sourceTree = "<group>"; };
 		031A04461FAAAA4C00B29550 /* FCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,7 +68,6 @@
 		031A043C1FAAAA4C00B29550 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				031A043D1FAAAA4C00B29550 /* .gitkeep */,
 				031A043E1FAAAA4C00B29550 /* alert-round.png */,
 				031A043F1FAAAA4C00B29550 /* checkmark-round.png */,
 				031A04401FAAAA4C00B29550 /* close-round.png */,
@@ -85,7 +80,6 @@
 		031A04431FAAAA4C00B29550 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				031A04441FAAAA4C00B29550 /* .gitkeep */,
 				031A04451FAAAA4C00B29550 /* FCAlertView.h */,
 				031A04461FAAAA4C00B29550 /* FCAlertView.m */,
 			);
@@ -161,13 +155,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				031A04471FAAAA4C00B29550 /* .gitkeep in Resources */,
 				031A044A1FAAAA4C00B29550 /* close-round.png in Resources */,
 				031A044B1FAAAA4C00B29550 /* heart.png in Resources */,
 				031A04481FAAAA4C00B29550 /* alert-round.png in Resources */,
 				031A04491FAAAA4C00B29550 /* checkmark-round.png in Resources */,
 				031A044C1FAAAA4C00B29550 /* star.png in Resources */,
-				031A044D1FAAAA4C00B29550 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +299,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FCAlertView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nimatahami.FCAlertView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -328,7 +320,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FCAlertView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nimatahami.FCAlertView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
