@@ -531,8 +531,9 @@
             tf.tag = i;
             if (tf.placeholder.length == 0 &&
                 [[alertTextFields objectAtIndex:i] objectForKey:@"placeholder"] != nil &&
-                [[[alertTextFields objectAtIndex:i] objectForKey:@"placeholder"] length] > 0)
-                tf.placeholder = [[alertTextFields objectAtIndex:i] objectForKey:@"placeholder"];
+                [[[alertTextFields objectAtIndex:i] objectForKey:@"placeholder"] length] > 0) {
+                tf.attributedPlaceholder = [[NSAttributedString alloc] initWithString:[[alertTextFields objectAtIndex:i] objectForKey:@"placeholder"] attributes:@{NSForegroundColorAttributeName: [tf.textColor colorWithAlphaComponent: 0.5]}];
+            }
             
             if (self.darkTheme)
                 tf.backgroundColor = [UIColor colorWithWhite:227.0f/255.0f alpha:1.0];
